@@ -1,0 +1,267 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* ===================================== */
+/* BODY */
+/* ===================================== */
+
+body {
+
+    background-color: #0b0f19;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+}
+
+/* ===================================== */
+/* MAIN CONTAINER */
+/* ===================================== */
+
+.container {
+
+    width: 100%;
+
+    padding: 40px;
+}
+
+/* ===================================== */
+/* TITLE */
+/* ===================================== */
+
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    color: #00ff99;
+
+    font-size: 42px;
+
+    letter-spacing: 2px;
+
+    text-shadow: 0 0 15px #00ff99;
+}
+
+/* ===================================== */
+/* CHART WRAPPER */
+/* ===================================== */
+
+.chart-wrapper {
+
+    width: 100%;
+
+    background: linear-gradient(
+        145deg,
+        #141b2d,
+        #1c2438
+    );
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    margin-bottom: 40px;
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.4),
+        0 0 5px rgba(0,255,153,0.1);
+}
+
+/* ===================================== */
+/* BTC CHART */
+/* ===================================== */
+
+#btcChart {
+
+    width: 100% !important;
+
+    height: 500px !important;
+}
+
+/* ===================================== */
+/* GRID */
+/* ===================================== */
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+/* ===================================== */
+/* CARD */
+/* ===================================== */
+
+.card {
+
+    background: linear-gradient(
+        145deg,
+        #141b2d,
+        #1c2438
+    );
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.4),
+        0 0 5px rgba(0,255,153,0.1);
+
+    transition: all 0.3s ease;
+
+    overflow: hidden;
+}
+
+/* ===================================== */
+/* CARD HOVER */
+/* ===================================== */
+
+.card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 0 25px rgba(0,255,153,0.15);
+}
+
+/* ===================================== */
+/* CARD TITLES */
+/* ===================================== */
+
+.card h2 {
+
+    color: #00bfff;
+
+    margin-bottom: 20px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+/* ===================================== */
+/* CARD VALUES */
+/* ===================================== */
+
+.card p {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
+}
+
+/* ===================================== */
+/* SIGNAL COLORS */
+/* ===================================== */
+
+.buy {
+
+    color: #00ff99;
+
+    text-shadow:
+        0 0 10px #00ff99;
+}
+
+.sell {
+
+    color: #ff4d4d;
+
+    text-shadow:
+        0 0 10px #ff4d4d;
+}
+
+.hold {
+
+    color: #ffd700;
+
+    text-shadow:
+        0 0 10px #ffd700;
+}
+
+/* ===================================== */
+/* SPECIFIC METRICS */
+/* ===================================== */
+
+#confidence {
+
+    color: #00bfff;
+}
+
+#balance {
+
+    color: #ffffff;
+}
+
+#winrate {
+
+    color: #00ff99;
+}
+
+#sharpe {
+
+    color: #ffcc00;
+}
+
+#market-state {
+
+    font-size: 20px;
+
+    line-height: 1.5;
+}
+
+/* ===================================== */
+/* RESPONSIVE */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+
+        padding: 20px;
+    }
+
+    h1 {
+
+        font-size: 30px;
+    }
+
+    .card {
+
+        padding: 20px;
+    }
+
+    .card p {
+
+        font-size: 22px;
+    }
+
+    #btcChart {
+
+        height: 350px !important;
+    }
+}
