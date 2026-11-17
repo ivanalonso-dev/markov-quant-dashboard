@@ -112,4 +112,4 @@ This project is for educational and research purposes only.
 
 Not financial advice.
 
-Ivan Alonso
+*Author: Ivan Alonso · [GitHub](https://github.com/ivanalonso-dev) · [LinkedIn](https://www.linkedin.com/in/ivanalonsodev) · [X](https://x.com/ivanalonsodev)*
